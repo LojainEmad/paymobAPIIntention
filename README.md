@@ -52,7 +52,7 @@ This project demonstrates how to integrate with **Paymob’s Intention API** to 
 Run the script to generate a checkout link:
 
 ```bash
-python paymob_checkout.py 150.0
+python paymob_checkout.py 55000.0
 ```
 
 - `150.0` is the amount in **EGP**.  
@@ -91,12 +91,12 @@ python webhook.py
   "amount": 15000,
   "currency": "EGP",
   "merchant_order_id": "ORD-12345",
-  "integration_id": 5243733,
-  "payment_methods": ["card"],
+  "integration_id":INTEGRATION_ID,
+  "payment_methods":[INTEGRATION_ID],
   "redirection_url": "https://yourapp.com/thank-you",
   "notification_url": "https://yourapp.com/paymob/webhook",
   "billing_data": {
-    "email": "customer@example.com",
+    "email": "lojain@gmail.com",
     "first_name": "Test",
     "last_name": "User",
     "phone_number": "+201234567890",
@@ -110,7 +110,7 @@ python webhook.py
 ```json
 {
   "id": 987654,
-  "amount": 15000,
+  "amount": 55000,
   "currency": "EGP",
   "client_secret": "cs_test_123456789",
   "status": "pending"
